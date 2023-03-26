@@ -1,0 +1,48 @@
+<div class="col-xs-12 col-sm-12 col-md-10 col-lg-6 mx-auto px-auto wrapper">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header">
+      <h1>GET IN TOUCH</h1>
+      <p>The classic galactical adventure arrives on Nintendo Switch! The tyrant Lassic rules the cosmos, and it is up
+        to you to defeat his evil reign. Witness the revival of this defining RPG in SEGA AGES Phantasy Star. Take
+        advantage of the new dungeon map display and the acclaimed “Ages Mode” as you traverse tricky dungeon mazes</p>
+    </div>
+  </div>
+  <mat-card>
+    <mat-card-header>Contact Form</mat-card-header>
+    <br>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 name-div">
+          <label>Name <span class="required">*</span></label><br>
+          <input formControlName="name" type="text" matInput class="form-control textInput" />
+          <span class="text-danger"
+            *ngIf="contactForm.get('name')?.touched && contactForm.hasError('required', 'name')">Please
+            enter your name.</span>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 email-div">
+          <label>Email Address <span class="required">*</span></label><br>
+          <input formControlName="email" type="email" matInput class="form-control emailInput" />
+          <span class="text-danger"
+            *ngIf="contactForm.get('email')?.touched && contactForm.hasError('required', 'email')">Please
+            enter your email.</span>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <label>Message <span class="required">*</span></label>
+          <br>
+          <textarea formControlName="message" name="message" id="" cols="60" rows="7"
+            class="form-control textareaInput"></textarea>
+          <span class="text-danger"
+            *ngIf="contactForm.get('message')?.touched && contactForm.hasError('required', 'message')">Please
+            enter your message.</span>
+        </div>
+      </div>
+      <br>
+      <div style="text-align: end; padding: 0 15px;">
+        <button [disabled]="contactForm.invalid" class="btn button">Send</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

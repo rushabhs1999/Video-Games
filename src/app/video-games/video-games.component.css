@@ -1,0 +1,142 @@
+mat-card {
+  margin: 20px;
+  padding-right: 20px;
+  color: white !important;
+  background-color: #0e1a2b;
+  border-radius: 0px;
+}
+mat-select {
+  padding-right: 0;
+}
+mat-card-subtitle,
+p {
+  color: white !important;
+}
+label {
+  margin-top: 15px;
+}
+input {
+  width: 100%;
+  background-color: #182c47;
+  padding: 5px;
+  outline: none;
+  border: none;
+  color: #c1d1e8;
+}
+.sorting-arrow {
+  background-color: #5692e8;
+  padding: 7px;
+  text-align: center;
+}
+.button {
+  background-color: #5692e8;
+  color: white;
+}
+
+::ng-deep.mat-badge-content {
+  display: grid;
+  min-width: 62px;
+  min-height: 52px;
+  text-align: center;
+  align-items: center;
+  padding: 5px 3px;
+  margin: 30px;
+  font-size: 24px;
+}
+::ng-deep.mat-select-arrow {
+  color: #ffffff;
+}
+::ng-deep.mat-select-value {
+  color: #c1d1e8;
+  /* width: 100% !important; */
+  background-color: #182c47;
+  padding: 4px 0 4px 15px;
+  margin-left: -15px;
+}
+::ng-deep.mat-select-arrow-wrapper {
+  height: 28px !important;
+  background-color: #182c47;
+}
+::ng-deep.mat-badge-content {
+  background-color: #5692e8;
+}
+
+@media screen and (max-width: 426px) {
+  mat-card-title {
+    margin-right: 50px;
+  }
+  .button {
+    width: 100% !important;
+  }
+  .sorting-arrow {
+    width: 20%;
+  }
+  mat-select {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  input,
+  ::ng-deep.mat-select-value {
+    padding: 10px;
+  }
+  .sorting-arrow {
+    padding: 12px 10px 13px 10px;
+  }
+
+  ::ng-deep.mat-select-arrow-wrapper {
+    height: 36px !important;
+    padding: 20px 10px;
+  }
+
+  .button {
+    margin-top: 44px;
+    padding: 7px 14px;
+  }
+  .sorting-arrow,
+  mat-select {
+    width: auto;
+  }
+}
+
+.button {
+  margin-top: 38px;
+}
+
+.loader {
+  border: 10px solid #5692e8;
+  border-radius: 50%;
+  border-top: 10px solid white;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin-top: 150px !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .loader {
+    margin-bottom: 150px !important;
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

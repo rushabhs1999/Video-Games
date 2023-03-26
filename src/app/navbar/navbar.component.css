@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.spacer {
+  margin-left: 50px;
+}
+.selected {
+  text-shadow: -20px -15px 0px rgba(193, 209, 232, 0.1);
+}
+.navcolor {
+  background: linear-gradient(#081221, #03080f);
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #c1d1e8 !important;
+  font-size: xx-large;
+}
+.maincss {
+  background-color: #051020;
+}
+@media screen and (max-width: 768px) {
+  .tabs {
+    margin-top: 15px;
+  }
+}
