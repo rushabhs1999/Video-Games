@@ -1,5 +1,8 @@
-Front-end is hosted on localhost:4200
-Run command **ng s** to start the application.
+To run front-end, run following commands.
+1. **npm install**
+2. **ng server**
 
-Backend is hosted on localhost:3000
-Please install the nodemon and change the path to /backend then run command **nodemon server.js**
+To run backend, run following commands.
+1. **cd /backend**
+2. **npm install**
+3. **nodemon server.js**
